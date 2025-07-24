@@ -1,0 +1,83 @@
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body{
+    background-color: #F5F8FF;
+}
+
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+
+.text-dark{
+    color: #252432;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.text-light{
+    color: #8987A1;
+}
+
+
+/* header & navbar styles */
+.header{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    text-decoration: none;
+    gap: 48px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.nav-item{
+    list-style: none;
+}
+
+.nav-item .cart{
+    height: 24px;
+    width: 24px; 
+}
+
+
+
+/* responsive for mobile device */
+@media screen and (max-width:576px){
+    .header{
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 13px;
+    }
+
+    .navbar{
+        margin: 0 auto;
+    }
+
+    .logo{
+        width: 63px;
+        height: 38px;
+    }
+
+    .cart{
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    .hidden{
+        visibility: hidden;
+    }
+}
