@@ -4,7 +4,15 @@
   font-style: normal;
 }
 
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 body{
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: #F5F8FF;
 }
 
@@ -21,27 +29,69 @@ body{
     font-weight: bold;
 }
 
+.medium{
+    font-weight: 500;
+}
+
 .text-light{
     color: #8987A1;
 }
 
+.text-normal{
+    color: rgba(0, 0, 0, 0.5);
+}
 
-/* header & navbar styles */
-.header{
-    max-width: 1440px;
+.text-center{
+    text-align: center;
+}
+
+.text-bold{
+    color: #111111;
+}
+
+.text-color-orange{
+    color: #E95A08;
+}
+
+.font-16{
+    font-size: 16px;
+}
+
+.font-22{
+    font-size: 22px;
+}
+
+.btn-primary{
+    width: 270px;
+    height: 50px;
+    color: #FFFFFF;
+    background-color: #E95A08;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+/*navbar styles */
+
+.navbar, .banner, .main{
     margin: 0 auto;
+    width: 1140px;
 }
 
 .navbar{
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
 }
 
-.nav-links{
-    text-decoration: none;
-    gap: 48px;
-    padding-top: 22px;
-    padding-bottom: 22px;
+.nav-list {
+  gap: 48px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.nav-link {
+  text-decoration: none;
 }
 
 .nav-item{
@@ -53,31 +103,200 @@ body{
     width: 24px; 
 }
 
+/* banner styles */
+
+.banner{
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.banner-container{
+    margin-top: 162px;
+    height: 299px;
+}
+
+.banner-container, .banner-image{
+    width: 50%;
+}
+
+.banner-title{
+    margin-top: 0px;
+    font-size: 65px;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.banner-description{
+    margin-top: 0px;
+    font-size: 22px;
+}
+
+.banner-image{
+    margin-top: 106px;
+    height: 355px;
+}
+
+/* section styles */
+
+/* plan-section */
+.plant-section{
+    margin-top: 120px;
+}
+
+.plant-title{
+    margin-top: 0px;
+    font-size: 50px;
+}
+
+.plant-description{
+    margin-top: 16px;
+}
+
+.cart-1{
+    margin-top: 49px;
+    margin-bottom: 30px;
+}
+
+.cart-1, .cart-2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.flower-details-container{
+    margin: 30px 69px;
+    text-align: center;
+}
+
+.flower-details{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.flower-price{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    gap: 30px;
+}
 
 
 /* responsive for mobile device */
-@media screen and (max-width:576px){
-    .header{
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-top: 13px;
-    }
+@media screen and (max-width: 576px){
 
+    /* navbar */
     .navbar{
-        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
     }
-
+    
     .logo{
         width: 63px;
         height: 38px;
+        padding: 7px 0px;
     }
 
-    .cart{
-        padding-top: 7px;
-        padding-bottom: 7px;
+    .special-cart{
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 7px 0;
+    }
+
+    .special-cart a{
+        font-size: 14px;
     }
 
     .hidden{
-        visibility: hidden;
+        display: none;
+    }
+
+    /* banner */
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    .banner-title{
+        font-size: 24px;
+    }
+
+    .banner-container{ 
+        align-items: center;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .banner-description{
+        font-size: 14px;
+    }
+
+    .banner-image{
+        height: 245px;
+    }
+    
+    .banner-image img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* section styles  */
+
+    /* plants-section */
+    .plant-container{
+        margin-top: 65px;
+    }
+
+     .plant-title{
+        margin-top: 0px;
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .plant-description{
+        font-size: 14px;
+        margin-top: 16px;
+        margin-left: 29px;
+        margin-bottom: 29px;
+    }
+
+    .carts{
+        width: 171px;
+        height: 341px;
+        gap: 20px;
+        margin-bottom: 29px;
+    }
+
+    .carts img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .flower-details{
+        height: 114px;
+    }
+
+    .flower-details-container{
+        margin: 0px 37px 30px 37px;
+    }
+
+    .flower-details-container p{
+        font-size: 16px;
+    }
+    
+    .flower-details-container h4{
+        font-size: 16px;
+    }
+
+    .button-container button{
+        width: 171px;
+        height: 50px ;
+        font-size: 16px;
+    }
+
+    .cart-1, .cart-2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
