@@ -33,6 +33,10 @@ body{
     font-weight: 500;
 }
 
+.text-white{
+    color: #FFFFFF;
+}
+
 .text-light{
     color: #8987A1;
 }
@@ -57,8 +61,24 @@ body{
     font-size: 16px;
 }
 
+.font-20{
+    font-size: 20px;
+}
+
 .font-22{
     font-size: 22px;
+}
+
+.font-28{
+    font-size: 28px;
+}
+
+.font-40{
+    font-size: 40px;
+}
+
+.font-50{
+    font-size: 50px;
 }
 
 .btn-primary{
@@ -207,9 +227,67 @@ body{
 }
 
 .plants-lover-title{
-    font-size: 50px;
     margin-bottom: 0px;
 }
+
+/* latest-deals section styles*/
+.latest-deals-section{
+    margin-top: 133px;
+}
+
+.latest-deals-info-title{
+    margin-bottom: 16px;
+}
+
+.latest-deals-info-description{
+    margin: 0 auto;
+    width: 888px;
+    height: auto;
+}
+
+.latest-deals-image-container{
+    margin-top: 120px;
+    gap: 28px;
+}
+
+.image-11{
+    margin-bottom: 25px;
+}
+
+.image-11, .image-12, .image-21{
+    border-radius: 14px;
+}
+
+.image-11, .image-12, .image-21{
+    /* filter: brightness(100%); */
+} 
+
+.image-2 .zabo-plant{
+    margin-top: -250px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.image-2 .shop{
+    font-weight: 500px;
+    font-size: 28px;
+}
+
+.bloom-plant{
+    margin-left: -290px;
+    margin-top: 70px;
+}
+
+.bloom-plant-shop{
+    margin-left: -150px;
+    margin-top: 110px;
+}
+
+.ana-plant{
+    margin-top: -120px;
+    margin-bottom: 10px;
+}
+
 
 
 /* responsive for mobile device */
