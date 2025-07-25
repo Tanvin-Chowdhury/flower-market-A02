@@ -25,6 +25,10 @@ body{
     color: #252432;
 }
 
+.text-black{
+    color: #000000;
+}
+
 .bold{
     font-weight: bold;
 }
@@ -122,9 +126,15 @@ body{
     list-style: none;
 }
 
-.nav-item .cart{
+.cart-image{
+    width: 24px;
     height: 24px;
-    width: 24px; 
+}
+
+.special-cart {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
 }
 
 /* banner styles */
@@ -211,7 +221,7 @@ body{
 
 .flower-store-image{
     width: 540px;
-    height: 597px;
+    height: auto;
 }
 
 .trusted-badge-image{
@@ -219,14 +229,13 @@ body{
     height: 286px;
     margin-top: -150px;
     margin-left: -190px;
-    position: relative;
 }
 
 .plants-lover-info{
     margin: 38px 0px 38px 60px;
 }
 
-.plant-lover-info  ul{
+.plant-lover-info ul{
     margin-top: 0px;
 }
 
@@ -298,8 +307,9 @@ body{
     margin: 0 auto;
     width: 1440px;
     margin-top: 120px;
-}
+    margin-bottom: 120px;
 
+}
 
 .subscribe-button{
     color: #FFFFFF;
@@ -312,6 +322,7 @@ body{
     padding-right: 50px;
     border: none;
     margin-left: -5px ;
+    margin-top: -5px ;
 }
 
 .join{
@@ -320,6 +331,7 @@ body{
 
 .join h3{
     color: #FFFFFF;
+    margin-bottom: 23px;
 }
 
 .input input[type="email"]{
@@ -336,8 +348,7 @@ body{
 .footer{
     width: 1120px;
     height: auto;
-    margin-top: 120px;
-    margin-top: 155px;
+    margin-top: 180px;
     padding: 50px 160px;
 }
 
@@ -393,8 +404,6 @@ body{
 
     /* navbar */
     .navbar{
-        display: flex;
-        justify-content: space-between;
         align-items: center;
         padding: 0 16px;
     }
